@@ -1,6 +1,6 @@
 //This is the beginning of the function for validation
 
-const form = document.querrySelector('form');
+const form = document.querySelector('form');
 const emailInput = document.getElementById('email');
 const errorMessage = document.getElementById('errorMessage');
 const Submit = document.getElementById('submit');
@@ -10,20 +10,18 @@ const home = document.getElementById('disMiss');
 const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 //compares input vales with RegExpression
-window.addEventListener("load", () => {
-    const isValid = emailInput.value.length === 0 ||
-    emailRegExp.test(emailInput.value);
-});
+// window.addEventListener("load", () => {
+//     const isValid = emailInput.value.length === 0 ||
+//     emailRegExp.test(emailInput.value);
+// });
 
 emailInput.addEventListener("input", () => {
-    const isValid = emailInput.value.length === 0 ||
+    const Validate = emailInput.value.length === 0 ||
     emailRegExp.test(emailInput.value);
-    if (isValid) {
-        emailInput.className = 'valid';
-        errorMessage.textContent = "";
-        errorMessage.className = "error";
+    if (validate) {  
+        emailInput.style.border = "green" ;
     }else {
-        emailInput.className = "invalid";
+        emailInput.errorMessage = "Enter your email";
     };
 });
 
@@ -31,7 +29,7 @@ emailInput.addEventListener("input", () => {
 form.addEventListener("submit", (event) =>{
     event.preventDefault();
 
-    const isValid = email.value.length === 0 || 
+    const validate = email.value.length === 0 || 
     emailRegExp.test(emailInput.value);
     if (!isValid){
         emailInput.className = "invalid";
