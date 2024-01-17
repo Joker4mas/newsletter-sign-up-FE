@@ -28,64 +28,56 @@
   </style> -->
   </head>
   <body class="bg-DarkSlateGrey font-Rob">
-    <main class="p-8">
+    <main class="p-2">
       <div
         id="formPic"
-        class="w-4/5 min-h-60 flex flex-col mx-auto md:flex md:flex-row-reverse gap-8 justify-center items-center bg-white my-5 rounded-3xl"
+        class="mainContainer w-3/4 flex flex-col mx-auto md:flex md:flex-row-reverse justify-center items-center bg-white mt-1 rounded-3xl"
       >
-        <!--  ### Primary
-      'Tomato':'hsl(4, 100%, 67%)',
-
-      ### Neutral
-      'DarkSlateGrey': 'hsl(234, 29%, 20%)',
-      'CharcoalGrey': 'hsl(235, 18%, 26%)',
-      'Grey':'hsl(231, 7%, 60%)',
-      'White':'hsl(0, 0%, 100%)' -->
         <div id="topRight" class="hidden md:flex">
           <img
             src="/assets/images/illustration-sign-up-desktop.svg"
             alt="illustration"
-            class="sm:hidden md:block p-4"
+            class="sm:hidden md:block p-2"
           />
         </div>
         <img
           src="/assets/images/illustration-sign-up-mobile.svg"
           alt=""
-          class="block md:hidden"
+          class="w-full block md:hidden"
         />
 
-        <!-- Sign-up form start -->
-        <div id="formcontainer" class="w-4/5 p-4 md:w-2/4 md:p-8 md:ml-4">
-          <form action="#" class="">
-            <h1 class="text-3xl font-semibold">Stay updated!</h1>
-            <p class="text-l py-6">
-              Join 60,000+ product managers receiving monthly updates on:
-            </p>
-
-            <div id="productServices" class="block">
-              <div id="firstService" class="flex gap-4 mb-4">
-                <img src="/assets/images/icon-list.svg" alt="" />
-                <p class="text-sm">
-                  Product discovery and building what matters
-                </p>
-              </div>
-
-              <!-- Measure update success -->
-              <div id="measure" class="flex gap-4 mb-4">
-                <img src="/assets/images/icon-list.svg" alt="" />
-                <p class="text-sm">Measuring to ensure updates a success</p>
-              </div>
-
-              <!-- and more -->
-              <div id="more" class="flex gap-4 mb-4">
-                <img src="/assets/images/icon-list.svg" alt="" />
-                <p class="text-sm">And much more!</p>
-              </div>
+        <div class="w-4/5 p-4 md:w-2/4 md:p-8 md:ml-4">
+          <h1 class="text-3xl font-semibold">Stay updated!</h1>
+          <p class="text-l py-6">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <!-- product services -->
+          <div id="productServices" class="block">
+            <div id="firstService" class="flex gap-4 mb-4">
+              <img src="/assets/images/icon-list.svg" alt="" />
+              <p class="text-sm">Product discovery and building what matters</p>
             </div>
+
+            <!-- Measure update success -->
+            <div id="measure" class="flex gap-4 mb-4">
+              <img src="/assets/images/icon-list.svg" alt="" />
+              <p class="text-sm">Measuring to ensure updates a success</p>
+            </div>
+
+            <!-- and more -->
+            <div id="more" class="flex gap-4 mb-4">
+              <img src="/assets/images/icon-list.svg" alt="" />
+              <p class="text-sm">And much more!</p>
+            </div>
+          </div>
+
+          <!-- Sign-up form start -->
+
+          <form action="#" class="">
             <div id="subForm" class="block mt-12">
               <div id="labelSpan" class="flex flex-row justify-between">
-                <label for="email" class="mb-2"> Email address </label
-                ><span id="errorMessage"></span>
+                <label for="email" class="text-sm md:text-md  mb-2"> Email address </label
+                ><span aria-live="polite" class="error text-red-400"></span>
               </div>
 
               <input
@@ -99,8 +91,8 @@
 
             <button
               type="submit"
-              id="sub-button"
-              class="w-full mb-8 md:mb-0 p-4 mt-4 text-white rounded-lg text-sm shadow-md hover:shadow-Tomato bg-DarkSlateGrey hover:bg-Tomato"
+              id="subButton"
+              class="w-full mb-4 md:mb-0 p-4 mt-4 text-white rounded-lg text-sm shadow-md hover:shadow-Tomato bg-DarkSlateGrey hover:bg-Tomato"
             >
               Subscribe to monthly newsletter
             </button>
@@ -112,8 +104,8 @@
 
       <!-- Thank you Message -->
       <div
-        id="thanks"
-        class=" flex flex-col w-4/5 p-8 md:w-3/5 mx-auto md:my-24 md:px-12 md:py-4 rounded-3xl bg-white text-center"
+        id="thank"
+        class="hidden flex flex-col w-4/5 p-8 md:w-3/5 mx-auto md:my-24 md:px-12 md:py-4 rounded-3xl bg-white text-center"
       >
         <img
           src="/assets/images/icon-success.svg"
@@ -149,6 +141,6 @@
       >. Coded by
       <a href="#" class="p-2 text-Tomato hover:text-green-400">Samuel O.J.</a>
     </footer>
-    <script src="validate.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
