@@ -20,20 +20,31 @@ const home = document.querySelector('#disMiss');
 //     }
 // }
 
+//update success page company email address
 function updatedUserEmail(email) {
     userEmail.textContent = email;
 }
+
+//function update to toggle between states
 function switchPages(){
     successMessage.classList.remove('hidden');
     mainContainer.style.display=  "none";
 }
 
-
+//form event listener
 form.addEventListener('submit', (e) => {
+    //prevent default
     e.preventDefault();
     // validateEmail();
+
+    //this code will replace the default company name on the success page
     updatedUserEmail(mailInput.value);
+
+    //this code will clear the input fields
     mailInput.value = "";
+
+    //this code will toggle between the success page and home page
+    //after the user has successfully filled in the email
     switchPages();
 
 });
