@@ -17,6 +17,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="output.css" />
+    <script src="/js/form.js" type="module"></script>
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -30,7 +31,7 @@
   <body class="bg-DarkSlateGrey font-Rob">
     <main class="p-2">
       <div
-        id="formPic"
+        id="signUp"
         class="mainContainer w-3/4 flex flex-col mx-auto md:flex md:flex-row-reverse justify-center items-center bg-white mt-1 rounded-3xl"
       >
         <div id="topRight" class="hidden md:flex">
@@ -73,10 +74,11 @@
 
           <!-- Sign-up form start -->
 
-          <form action="#" class="">
+          <form action="#" id="newsletter">
             <div id="subForm" class="block mt-12">
               <div id="labelSpan" class="flex flex-row justify-between">
-                <label for="email" class="text-sm md:text-md  mb-2"> Email address </label
+                <label for="email" class="text-sm md:text-md mb-2">
+                  Email address </label
                 ><span aria-live="polite" class="error text-red-400"></span>
               </div>
 
@@ -84,8 +86,9 @@
                 type="email"
                 name="email"
                 id="email"
+                onKeyDown="myError"
                 placeholder="email@company.com"
-                class="p-2 border-2 rounded-lg w-full mb-4 cursor-pointer outline-none focus-within:bg-green-100"
+                class="p-2 border-2 rounded-lg w-full mb-4 cursor-pointer outline-none invalid:bg-red-200"
               />
             </div>
 
@@ -104,8 +107,8 @@
 
       <!-- Thank you Message -->
       <div
-        id="thank"
-        class="hidden flex flex-col w-4/5 p-8 md:w-3/5 mx-auto md:my-24 md:px-12 md:py-4 rounded-3xl bg-white text-center"
+        id="thanksPage"
+        class="secondContainer hidden flex flex-col w-3/4 p-8 md:w-2/5 mx-auto md:my-24 md:px-12 md:py-4 rounded-3xl bg-white text-center"
       >
         <img
           src="/assets/images/icon-success.svg"
@@ -120,8 +123,9 @@
 
         <p class="text-start mb-24 md:mb-8">
           A confirmation email has been sent to
-          <strong>ash@loremcompany.com</strong> Please open it and click the
-          button inside to confirm your subscription.
+          <span id="userEmail" class="font-bold"><strong >ash@loremcompany.com</strong></span>
+          Please open it and click the button inside to confirm your
+          subscription.
         </p>
 
         <button
@@ -141,6 +145,5 @@
       >. Coded by
       <a href="#" class="p-2 text-Tomato hover:text-green-400">Samuel O.J.</a>
     </footer>
-    <script src="form.js"></script>
   </body>
 </html>
