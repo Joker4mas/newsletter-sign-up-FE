@@ -89,7 +89,7 @@ I have to keeping on improving on my Javascript learning path, i have to take on
 ### Useful resources
 
 - [https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation] - This helped to validate email. I really liked this pattern and will use it going forward.
-
+- [https://www.frontendmentor.io/profile/FazeenIjaz] - She helped in refactoring my code and also made corrections for things to work better. Thanks ma'am
 
 ## Author
 

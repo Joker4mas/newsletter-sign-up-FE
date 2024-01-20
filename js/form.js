@@ -12,13 +12,10 @@ const home = document.querySelector('#disMiss');
 
 // });
 
-// function validateEmail(){
-//     const regex =  /^(?:\d{3}|\(\d{3}\))([-/.])\d{3}\1\d{4}$/;
-//     if (!(mailInput.match(emailCorrectPattern))) {
-//         error.textContent = 'Enter email address';
-//         return false;
-//     }
-// }
+function validateEmail(email){
+    const regex =  /^\S+@\S+\.\S+$/;
+    return regex.test(email);
+}
 
 //update success page company email address
 function updatedUserEmail(email) {
@@ -35,17 +32,31 @@ function switchPages(){
 form.addEventListener('submit', (e) => {
     //prevent default
     e.preventDefault();
-    // validateEmail();
+    
+    // capture email values
+    const emailValue = mailInput.value.trim();
 
-    //this code will replace the default company name on the success page
-    updatedUserEmail(mailInput.value);
+    //verify email if it's valid
+    if (validateEmail(emailValue)) {
+        // updatedUserEmail(mailInput.value);
+        updatedUserEmail(emailValue);
 
-    //this code will clear the input fields
-    mailInput.value = "";
+         //this code will replace the default company name on the success page
+    
 
-    //this code will toggle between the success page and home page
-    //after the user has successfully filled in the email
-    switchPages();
+        //this code will clear the input fields
+        mailInput.value = "";
+
+        //this code will toggle between the success page and home page
+        //after the user has successfully filled in the email
+        switchPages();
+    }else{
+
+        // if the email is not valid, then display an error message
+        error.append = "Please enter a valid email";
+    }
+
+   
 
 });
 
