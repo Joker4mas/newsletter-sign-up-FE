@@ -6,7 +6,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshot](/screenshots/Screenshot%202024-01-19%20at%2017-26-00%20Frontend%20Mentor%20Newsletter%20sign-up%20form%20with%20success%20message.png)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
