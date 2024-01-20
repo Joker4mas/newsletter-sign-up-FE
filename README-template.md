@@ -27,46 +27,39 @@ Users should be able to:
 - Add their email and submit the form
 - See a success message with their email after successfully submitting the form
 - See form validation messages if:
-  - The field is left empty
-  - The email address is not formatted correctly
+- The field is left empty
+- The email address is not formatted correctly
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshots/Screenshot%202024-01-19%20at%2017-25-07%20Frontend%20Mentor%20Newsletter%20sign-up%20form%20with%20success%20message.png.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:[https://github.com/Joker4mas/newsletter-sign-up-FE]
+- Live Site URL: [https://newsletter-sign-up-fe.vercel.app/]
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- Tailwindcss
+- Flex box
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [JavaScript] - Functionality
+- [Tailwindcss]- For styles and Responsive view ports
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In the course of this task i learned how to create
+functions and functions calls. I learned how to create toggle buttons, addEvent handlers to buttons, and also create a RegExp to match data input.
+Giving me a different perspective about what a real form functionality should be like.
+
 
 To see how you can add code snippets, see below:
 
@@ -90,27 +83,19 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I have to keeping on improving on my Javascript learning path, i have to take on more of such task to reinform the my learning.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation] - This helped to validate email. I really liked this pattern and will use it going forward.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [https://github.com/Joker4mas]
+- Frontend Mentor - [https://www.frontendmentor.io/profile/Joker4mas]
+- Twitter - [@flam3s1]
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
